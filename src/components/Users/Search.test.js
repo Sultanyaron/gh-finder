@@ -14,7 +14,7 @@ describe('<Search />', () => {
     let wrapper;
     
     beforeEach(() => {
-        wrapper = shallow(<Search searchUsers={dummyFunc} clearUsers={dummyFunc} showClear={true} />);
+        wrapper = shallow(<Search searchUsers={dummyFunc} clearUsers={dummyFunc} showClear={true} setAlert={dummyFunc} />);
     });
 
     it('should render 1 form with class form', () => {
